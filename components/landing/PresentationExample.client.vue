@@ -105,14 +105,15 @@ onMounted(() => {
     isDesktop.value = window.innerWidth >= 992;
     updateContent();
   });
-});
-
-// Bersihkan event listener saat komponen dilepas
-onUnmounted(() => {
   import('bootstrap').then(({ Tooltip }) => {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     tooltipTriggerList.forEach(el => new Tooltip(el))
   });
+});
+
+// Bersihkan event listener saat komponen dilepas
+onUnmounted(() => {
+  
   window.removeEventListener("resize", updateContent);
 });
 </script>

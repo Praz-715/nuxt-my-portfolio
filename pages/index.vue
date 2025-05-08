@@ -59,7 +59,8 @@ onUnmounted(() => {
         <LandingPresentationExample :data="projectData" />
         <!-- <LandingPresentationPages /> -->
         <LandingAuthorPosts />
-
+        <LandingAboutTeam />
+        <!-- <MyAccordion /> -->
         <LandingContact />
     </div>
 

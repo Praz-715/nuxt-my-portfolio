@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       ],
       script: [
         { src: 'https://kit.fontawesome.com/42d5adcbca.js', crossorigin: "anonymous" },
+        // { src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', defer: true }
       ]
     },
   },
@@ -28,7 +29,8 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxt/ui',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    'nuxt-svgo',
   ],
   vite: {
     plugins: [require('vite-svg-loader')()],
