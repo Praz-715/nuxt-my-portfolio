@@ -1,6 +1,13 @@
 <script setup>
 // import ExampleCard from "../Components/ExampleCard.vue";
 import { onMounted, onUnmounted, ref } from "vue";
+import OracleIcon from '@/assets/img/logos/oracle.png';
+import PostgreIcon from '@/assets/img/logos/postgresql.png';
+import MongoIcon from '@/assets/img/logos/mongodb.png';
+import MySQLIcon from '@/assets/img/logos/mysql.png';
+import MariaIcon from '@/assets/img/logos/mariadb.png';
+import TigerGraphIcon from '@/assets/img/logos/tigergraph.png';
+import SingleStoreIcon from '@/assets/img/logos/singlestore.png';
 // import MaterialBadge from "../../../components/MaterialBadge.vue";
 
 defineProps({
@@ -102,6 +109,10 @@ onMounted(() => {
 
 // Bersihkan event listener saat komponen dilepas
 onUnmounted(() => {
+  import('bootstrap').then(({ Tooltip }) => {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    tooltipTriggerList.forEach(el => new Tooltip(el))
+  });
   window.removeEventListener("resize", updateContent);
 });
 </script>
@@ -115,26 +126,24 @@ export default {
     <div class="container">
       <div class="row justify-content-center">
         <!-- <div class="row "> -->
-          <div class="col-lg-8 text-center my-sm-5">
-            <div
-              class="presentation-container"
-              @mouseover="isEnglish = false; updateContent()"
-              @mouseleave="isEnglish = true; updateContent()"
-            >
-              <h2 class="text-dark mb-0">{{ title }}</h2>
-              <br />
-              <p class="lead">{{ content }}</p>
-            </div>
-            <!-- <div class="presentation-container" @mouseover="isEnglish = false" @mouseleave="isEnglish = true">
+        <div class="col-lg-8 text-center my-sm-5">
+          <div class="presentation-container" @mouseover="isEnglish = false; updateContent()"
+            @mouseleave="isEnglish = true; updateContent()">
+            <h2 class="text-dark mb-0">{{ title }}</h2>
+            <br />
+            <p class="lead">{{ content }}</p>
+          </div>
+
+          <!-- <div class="presentation-container" @mouseover="isEnglish = false" @mouseleave="isEnglish = true">
               <h2 class="text-dark mb-0">{{ title }}</h2>
               <br>
               <p class="lead">{{ content }}</p>
             </div> -->
-            <!-- <MaterialBadge color="success" class="mb-3"
+          <!-- <MaterialBadge color="success" class="mb-3"
               >Infinite combinations</MaterialBadge
             > -->
 
-            <!-- <h2 class="text-dark mb-0">Tentang Saya</h2>
+          <!-- <h2 class="text-dark mb-0">Tentang Saya</h2>
             <h2 class="text-dark mb-0">About Me</h2>
             <p class="lead">
               
@@ -143,6 +152,43 @@ export default {
               
             </p> -->
           <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="d-flex flex-column w-100 text-center p-5 mb-8">
+          <h3>My expertise enhances performance</h3>
+          <div class="d-flex justify-content-center mt-3 flex-wrap">
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Oracle - The World's Most Popular Database">
+              <img :src="OracleIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="PostgreSQL - The World's Most Advanced Open Source Relational Database">
+              <img :src="PostgreIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="MongoDB - The most popular NoSQL database">
+              <img :src="MongoIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="MySQL - The World's Most Popular Open Source Database">
+              <img :src="MySQLIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="MariaDB - The leading enterprise open source database">
+              <img :src="MariaIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="TigerGraph - The leading graph database for enterprise">
+              <img :src="TigerGraphIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="SingleStore - The world's fastest database for real-time analytics">
+              <img :src="SingleStoreIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

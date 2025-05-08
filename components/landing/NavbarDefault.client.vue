@@ -162,7 +162,7 @@ watch(
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <NuxtLink
-              class="nav-link text-dark font-weight-bolder"
+              class="nav-link text-dark font-weight-bolder rounded hover-bg"
               to="#"
               v-scroll-to="'#home'"
             >
@@ -171,15 +171,15 @@ watch(
           </li>
           <li class="nav-item">
             <NuxtLink
-              class="nav-link text-dark font-weight-bolder"
+              class="nav-link text-dark font-weight-bolder rounded hover-bg"
               to="#"
               v-scroll-to="'#tentang'"
-              >AboutMe</NuxtLink
+              >About Me</NuxtLink
             >
           </li>
           <li class="nav-item">
             <NuxtLink
-              class="nav-link text-dark font-weight-bolder"
+              class="nav-link text-dark font-weight-bolder rounded hover-bg"
               to="#"
               v-scroll-to="'#blog'"
               >Blog</NuxtLink
@@ -187,15 +187,15 @@ watch(
           </li>
           <li class="nav-item">
             <NuxtLink
-              class="nav-link text-dark font-weight-bolder"
+              class="nav-link text-dark font-weight-bolder rounded hover-bg"
               to="#"
               v-scroll-to="'#contactUs'"
               >Contact Us</NuxtLink
             >
           </li>
         </ul>
-        <ul class="nav navbar-nav">
-          <li class="nav-item dropdown dropdown-hover mx-0">
+        <ul class="nav navbar-nav mx-1">
+          <li class="nav-item  mx-0">
             <a
               class="nav-link d-flex cursor-pointer align-items-center rounded  hover-bg"
               href="https://www.facebook.com/th.teguh"
@@ -204,7 +204,7 @@ watch(
               <svg
                 width="20px"
                 height="20px"
-                class="material-icons me-2 opacity-6"
+                class="material-icons mx-1 opacity-6"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
                 data-testid="GitHubIcon"
@@ -229,7 +229,7 @@ watch(
               <svg
                 width="20px"
                 height="20px"
-                class="material-icons me-2 opacity-6"
+                class="material-icons mx-1 opacity-6"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
                 data-testid="GitHubIcon"
@@ -252,7 +252,7 @@ watch(
               <svg
                 width="20px"
                 height="20px"
-                class="material-icons me-2 opacity-6"
+                class="material-icons mx-1 opacity-6"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
                 data-testid="GitHubIcon"
@@ -288,7 +288,7 @@ watch(
   <!-- End Navbar -->
 </template>
 <style scoped>
-  /* .hover-bg:hover {
+  .hover-bg:hover {
   background-color: #f8f9fa; 
-} */
+}
 </style>

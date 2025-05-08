@@ -29,5 +29,8 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     '@nuxt/eslint'
-  ]
+  ],
+  vite: {
+    plugins: [require('vite-svg-loader')()],
+  },
 })

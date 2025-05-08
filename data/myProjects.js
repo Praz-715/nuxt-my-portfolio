@@ -23,8 +23,8 @@ import imgBRI from "~/assets/img/myproject/bri.png";
 
 export default [
   {
-    heading: "My Oracle Project",
-    description: "All my projects related to Oracle software",
+    heading: "My Database Project",
+    description: "All my projects related to Database software",
     items: [
       {
         image: imgJSC,

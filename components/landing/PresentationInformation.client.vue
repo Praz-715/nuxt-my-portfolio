@@ -5,10 +5,14 @@
 import vueBangke from "~/assets/img/foto1.jpg";
 import vueBangkes from "~/assets/img/foto2.jpg";
 
+
+
 import { onMounted, onUnmounted, nextTick, ref } from 'vue';
 import Typed from 'typed.js';
 
 const typedInstance = ref(null);
+
+
 
 onMounted(async () => {
   await nextTick();
@@ -72,11 +76,24 @@ onUnmounted(() => {
                 <!-- <h1>Programmer</h1>
               <h1>Engineer</h1>
               <h1>Infrastucture Engineer</h1> -->
-                <h3>Oracle</h3>
-                <h3>MongoDB</h3>
-                <h3>MSSQL</h3>
-                <h3>MySQL</h3>
-                <h3>MariaDB</h3>
+                <h3>
+                  Oracle
+                </h3>
+                <h3>
+                  MongoDB
+                </h3>
+                <h3>
+                  PostgreSQL
+                </h3>
+                <h3>
+                  MSSQL
+                </h3>
+                <h3>
+                  MySQL
+                </h3>
+                <h3>
+                  MariaDB
+                </h3>
                 <h3>Tiger Graph</h3>
                 <h3>Single Store</h3>
                 <!-- <h1>Data Analyst</h1>

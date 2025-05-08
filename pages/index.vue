@@ -6,10 +6,12 @@ import '~/assets/css/nucleo-svg.css'
 //images
 import vueMkHeader from "~/assets/img/vue-mk-header.jpg";
 
-import projectData from '~/data/myProjects.js' 
+import projectData from '~/data/myProjects.js'
 // const projectData = inject('projectData');
 // console.log('projectData:', typeof(projectData));
 // app.vue atau layout.vue
+
+
 
 
 
@@ -18,6 +20,9 @@ provide('projectData', projectData)
 
 //hooks
 // const body = document.getElementsByTagName("body")[0];
+
+// onMounted(() => {
+// });
 onMounted(() => {
     const body = document.body;
     body.classList.add("presentation-page");
@@ -49,13 +54,14 @@ onUnmounted(() => {
     </LandingHeader>
 
     <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <!-- <PresentationCounter /> -->
+        <!-- <PresentationCounter /> -->
 
-    <LandingPresentationExample :data="projectData" />
-    <LandingPresentationPages />
+        <LandingPresentationExample :data="projectData" />
+        <!-- <LandingPresentationPages /> -->
+        <LandingAuthorPosts />
 
-    <LandingContact />
-  </div>
+        <LandingContact />
+    </div>
 
     <LandingFooterCentered />
 </template>
