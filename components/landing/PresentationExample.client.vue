@@ -86,6 +86,44 @@ const translations = {
   },
 };
 
+const expertiseList = [
+  {
+    name: 'Oracle',
+    tooltip: "Oracle - The World's Most Popular Database",
+    icon: OracleIcon,
+  },
+  {
+    name: 'PostgreSQL',
+    tooltip: "PostgreSQL - The World's Most Advanced Open Source Relational Database",
+    icon: PostgreIcon,
+  },
+  {
+    name: 'MongoDB',
+    tooltip: "MongoDB - The most popular NoSQL database",
+    icon: MongoIcon,
+  },
+  {
+    name: 'MySQL',
+    tooltip: "MySQL - The World's Most Popular Open Source Database",
+    icon: MySQLIcon,
+  },
+  {
+    name: 'MariaDB',
+    tooltip: "MariaDB - The leading enterprise open source database",
+    icon: MariaIcon,
+  },
+  {
+    name: 'TigerGraph',
+    tooltip: "TigerGraph - The leading graph database for enterprise",
+    icon: TigerGraphIcon,
+  },
+  {
+    name: 'SingleStore',
+    tooltip: "SingleStore - The world's fastest database for real-time analytics",
+    icon: SingleStoreIcon,
+  },
+];
+
 // Reactive teks berdasarkan kondisi bahasa dan ukuran layar
 const title = ref("");
 const content = ref("");
@@ -113,7 +151,7 @@ onMounted(() => {
 
 // Bersihkan event listener saat komponen dilepas
 onUnmounted(() => {
-  
+
   window.removeEventListener("resize", updateContent);
 });
 </script>
@@ -156,43 +194,19 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container">
+    <!-- <div class="container-fluid"> -->
       <div class="row">
-        <div class="d-flex flex-column w-100 text-center p-5 mb-8">
-          <h3>My expertise enhances performance</h3>
+        <div class="d-flex flex-column w-100 text-center p-5">
+          <h3 class="expertise-title">My expertise enhances performance</h3>
           <div class="d-flex justify-content-center mt-3 flex-wrap">
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="Oracle - The World's Most Popular Database">
-              <img :src="OracleIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
-            </a>
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="PostgreSQL - The World's Most Advanced Open Source Relational Database">
-              <img :src="PostgreIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
-            </a>
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="MongoDB - The most popular NoSQL database">
-              <img :src="MongoIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
-            </a>
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="MySQL - The World's Most Popular Open Source Database">
-              <img :src="MySQLIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
-            </a>
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="MariaDB - The leading enterprise open source database">
-              <img :src="MariaIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
-            </a>
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="TigerGraph - The leading graph database for enterprise">
-              <img :src="TigerGraphIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
-            </a>
-            <a class="mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="SingleStore - The world's fastest database for real-time analytics">
-              <img :src="SingleStoreIcon" alt="title" loading="lazy" :style="{ height: '90px' }" />
+            <a v-for="(item, index) in expertiseList" :key="index" class="mx-3" data-bs-toggle="tooltip"
+              data-bs-placement="bottom" :title="item.tooltip">
+              <img :src="item.icon" :alt="item.name" loading="lazy" class="expertise-img" />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
     <div class="container mt-sm-5 mt-3">
       <div v-for="({ heading, description, items }, index) in data"
         :class="`row ${index != 0 && index != -1 ? 'pt-lg-6' : ''}`" :key="heading">
@@ -223,4 +237,41 @@ export default {
 .presentation-container p {
   transition: all 0.3s ease-in-out;
 }
+
+.expertise-img {
+  height: 90px;
+  transition: height 0.3s ease;
+}
+
+.expertise-title {
+  font-size: 1.75rem; /* ukuran normal (h3) */
+}
+
+@media (max-width: 992px) {
+  .expertise-img {
+    height: 70px;
+  }
+  .expertise-title {
+    font-size: 1.5rem; /* sama seperti h4 */
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-img {
+    height: 55px;
+  }
+  .expertise-title {
+    font-size: 1.25rem; /* sama seperti h4 */
+  }
+}
+
+@media (max-width: 576px) {
+  .expertise-img {
+    height: 45px;
+  }
+  .expertise-title {
+    font-size: 1.25rem; /* sama seperti h4 */
+  }
+}
+
 </style>

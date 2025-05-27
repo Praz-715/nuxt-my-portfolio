@@ -44,35 +44,35 @@ import logoPinet from "@/assets/img/logos/logo-pinet.png";
           }"
           loading="lazy"
         >
-        <div class="col-6 mx-auto">
-          <HorizontalTeamCard class="mt-4" :image="logoYasatech" :profile="{ name: 'PT Yasatech Sinergi Inspirasi', link: 'https://yasatech.co.id/' }"
+        <div class="col-lg-6 col-md-6 col-12 mx-auto">
+          <HorizontalTeamCard class="my-4 z-index-2" :image="logoYasatech" :profile="{ name: 'PT Yasatech Sinergi Inspirasi', link: 'https://yasatech.co.id/' }"
             :position="{ label: 'Technical Consultant Database', color: 'success' }" description="Apr 2025 - now" />
         </div>
-        <!-- <div class="col-6">
+        <!-- <div class="col-lg-6 col-md-6 col-12">
           <HorizontalTeamCard class="mt-4" :image="william"
             :profile="{ name: 'William Pearce', link: 'javascript:;' }" :position="{ label: 'Boss', color: 'success' }"
             description="Artist is a term applied to a person who engages in an
                     activity deemed to be an art." />
         </div> -->
-      </div>
-      <div class="row mt-4 bg-lima-custom py-6 py-md-5 my-sm-3 mb-3 border-radius-xl"
+      <!-- </div> -->
+      <!-- <div class="row mt-4 bg-lima-custom py-6 py-md-5 my-sm-3 mb-3 border-radius-xl"
           :style="{
             backgroundImage: `url(${wavesWhite})`,
           }"
-          loading="lazy">
-        <div class="col-6">
-          <HorizontalTeamCard class="mt-4 z-index-2" :image="logoPinet"
+          loading="lazy"> -->
+        <div class="col-lg-6 col-md-6 col-12">
+          <HorizontalTeamCard class="my-4 z-index-2" :image="logoPinet"
             :profile="{ name: 'PT Prima Integrasi Network', link: 'https://prima-integrasi.co.id/' }" :position="{ label: 'Database Administrator', color: 'success' }"
             description="Jun 2022 - Mar 2025" />
         </div>
-        <div class="col-6">
-          <HorizontalTeamCard class="mt-4 z-index-2" :image="logoSpi"
+        <div class="col-lg-6 col-md-6 col-12">
+          <HorizontalTeamCard class="my-4 z-index-2" :image="logoSpi"
             :profile="{ name: 'PT Securindo Packatama Indonesia', link: 'https://prima-integrasi.co.id/' }"
             :position="{ label: 'IT System Support', color: 'success' }" description="Nov 2017 - Jun 2022" />
         </div>
-      </div>
+      <!-- </div> -->
     </div>
-    <!-- </div>   -->
+    </div>  
   </section>
 </template>
 <style>
