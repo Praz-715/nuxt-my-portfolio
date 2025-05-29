@@ -195,17 +195,17 @@ export default {
       </div>
     </div>
     <!-- <div class="container-fluid"> -->
-      <div class="row">
-        <div class="d-flex flex-column w-100 text-center p-5">
-          <h3 class="expertise-title">My expertise enhances performance</h3>
-          <div class="d-flex justify-content-center mt-3 flex-wrap">
-            <a v-for="(item, index) in expertiseList" :key="index" class="mx-3" data-bs-toggle="tooltip"
-              data-bs-placement="bottom" :title="item.tooltip">
-              <img :src="item.icon" :alt="item.name" loading="lazy" class="expertise-img" />
-            </a>
-          </div>
+    <div class="row">
+      <div class="d-flex flex-column w-100 text-center p-5">
+        <h3 class="expertise-title">My expertise enhances performance</h3>
+        <div class="d-flex justify-content-center mt-3 flex-wrap">
+          <a v-for="(item, index) in expertiseList" :key="index" class="mx-3" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" :title="item.tooltip">
+            <img :src="item.icon" :alt="item.name" loading="lazy" class="expertise-img" />
+          </a>
         </div>
       </div>
+    </div>
     <!-- </div> -->
     <div class="container mt-sm-5 mt-3">
       <div v-for="({ heading, description, items }, index) in data"
@@ -220,10 +220,12 @@ export default {
         </div>
         <div :class="`${col2 ?? 'col-lg-9'}`">
           <div :class="`row ${index != 0 ? 'mt-3' : ''}`">
-            <div class="col-md-4 mt-md-0" v-for="{ image, title, subtitle, route, pro, projectId } in items"
+            <div class="col-md-4 mt-md-0" v-for="{ image, title, subtitle, route, pro, projectId, slug } in items"
               :key="title">
-              <ExampleCard class="min-height-160 shadow-lg" :image="image" :title="title" :subtitle="subtitle"
-                :route="route" :projectId="projectId" :pro="pro" />
+              <NuxtLink :to="`/myproject/${slug}`">
+                <ExampleCard class="min-height-160 shadow-lg" :image="image" :title="title" :subtitle="subtitle"
+                  :route="route" :projectId="projectId" :pro="pro" />
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -244,15 +246,18 @@ export default {
 }
 
 .expertise-title {
-  font-size: 1.75rem; /* ukuran normal (h3) */
+  font-size: 1.75rem;
+  /* ukuran normal (h3) */
 }
 
 @media (max-width: 992px) {
   .expertise-img {
     height: 70px;
   }
+
   .expertise-title {
-    font-size: 1.5rem; /* sama seperti h4 */
+    font-size: 1.5rem;
+    /* sama seperti h4 */
   }
 }
 
@@ -260,8 +265,10 @@ export default {
   .expertise-img {
     height: 55px;
   }
+
   .expertise-title {
-    font-size: 1.25rem; /* sama seperti h4 */
+    font-size: 1.25rem;
+    /* sama seperti h4 */
   }
 }
 
@@ -269,9 +276,10 @@ export default {
   .expertise-img {
     height: 45px;
   }
+
   .expertise-title {
-    font-size: 1.25rem; /* sama seperti h4 */
+    font-size: 1.25rem;
+    /* sama seperti h4 */
   }
 }
-
 </style>
