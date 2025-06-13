@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       ]
     },
   },
-  css: ['bootstrap/dist/css/bootstrap.min.css'],
+  css: ['bootstrap/dist/css/bootstrap.min.css', 'vue-prism-editor/dist/prismeditor.min.css'],
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',

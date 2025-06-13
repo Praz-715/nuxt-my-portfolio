@@ -100,8 +100,8 @@ watch(
     ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark,
   }">
     <div :class="props.transparent || props.light || props.dark
-      ? 'container'
-      : 'container-fluid px-0'
+        ? 'container'
+        : 'container-fluid px-0'
       ">
       <NuxtLink class="navbar-brand d-none d-md-block" :class="[
         (props.transparent && textDark.value) || !props.transparent
@@ -111,8 +111,8 @@ watch(
         Om Guh DBA
       </NuxtLink>
       <NuxtLink class="navbar-brand d-block d-md-none" :class="props.transparent || props.dark
-        ? 'text-white'
-        : 'font-weight-bolder ms-sm-3'
+          ? 'text-white'
+          : 'font-weight-bolder ms-sm-3'
         " to="/">
         Om Guh DBA
       </NuxtLink>
@@ -133,22 +133,22 @@ watch(
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="#" v-scroll-to="'#home'">
+            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="/">
               Home
             </NuxtLink>
           </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="#" v-scroll-to="'#tentang'">
+          <!-- <li class="nav-item">
+            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="/" v-scroll-to="'tentang'">
               About Me</NuxtLink>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="#" v-scroll-to="'#blog'">Blog
+            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="/myblog">Blog
             </NuxtLink>
           </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="#" v-scroll-to="'#contactUs'">
+          <!-- <li class="nav-item">
+            <NuxtLink class="nav-link text-dark font-weight-bolder rounded hover-bg" to="/" v-scroll-to="'#contactUs'">
               Contact Us</NuxtLink>
-          </li>
+          </li> -->
         </ul>
         <ul class="nav navbar-nav mx-1">
           <li class="nav-item  mx-0">
@@ -213,17 +213,7 @@ watch(
           </li>
         </ul>
 
-        <!-- <ul class="navbar-nav d-lg-block d-none">
-          <li class="nav-item">
-            <a
-              :href="action.route"
-              class="btn btn-sm mb-0"
-              :class="action.color"
-              onclick="smoothToPricing('pricing-soft-ui')"
-              >{{ action.label }}</a
-            >
-          </li>
-        </ul> -->
+
       </div>
       <!-- </div> -->
     </div>

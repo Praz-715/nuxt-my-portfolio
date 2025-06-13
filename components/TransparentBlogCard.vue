@@ -29,12 +29,17 @@ defineProps({
   <div class="card card-plain">
     <div class="card-header p-0 position-relative">
       <a class="d-block blur-shadow-image">
-        <img
+        <NuxtLink
+          to="/myblog"
+          >
+        
+          <img
           :src="image"
           :alt="title"
           class="img-fluid shadow border-radius-lg"
           loading="lazy"
-        />
+          />
+        </NuxtLink>
       </a>
     </div>
     <div class="card-body px-0">

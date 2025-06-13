@@ -83,13 +83,13 @@ onMounted(() => {
                         <li class="nav-item">
                           <a class="nav-link mb-0 px-0 py-1 active" data-bs-toggle="tab" href="#lang-id" role="tab"
                             aria-selected="true">
-                            <i class="fas fa-desktop text-sm me-2"></i> EN
+                            EN
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link mb-0 px-0 py-1" data-bs-toggle="tab" href="#lang-en" role="tab"
                             aria-selected="false">
-                            <i class="fas fa-code text-sm me-2"></i> ID
+                            ID
                           </a>
                         </li>
                       </ul>
@@ -100,9 +100,10 @@ onMounted(() => {
               <div class="tab-content tab-space">
                 <div class="tab-pane active p-2" id="lang-id">
                   <div class="overflow-auto" :class="`${height && `height-${height}`}`">
-                    
+
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item" v-for="(pekerjaan, index) in project.pekerjaan.en" :key="index"> {{ pekerjaan }}</li>
+                      <li class="list-group-item" v-for="(pekerjaan, index) in project.pekerjaan.en" :key="index"> {{
+                        pekerjaan }}</li>
                     </ul>
                     <!-- <h1>Job</h1> -->
                   </div>
@@ -111,7 +112,8 @@ onMounted(() => {
                   <!-- <div class="position-relative p-4 pb-2"> -->
                   <div class="overflow-auto" :class="`${height && `height-${height}`}`">
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item" v-for="(pekerjaan, index) in project.pekerjaan.id" :key="index"> {{ pekerjaan }}</li>
+                      <li class="list-group-item" v-for="(pekerjaan, index) in project.pekerjaan.id" :key="index"> {{
+                        pekerjaan }}</li>
                     </ul>
                     <!-- <h1>Hello</h1> -->
                   </div>
@@ -136,6 +138,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.nav.nav-pills {
+  background: #f2f2f2;
+}
+
 .nav-pills .nav-link.active {
   background-color: white !important;
   color: #344767 !important;
