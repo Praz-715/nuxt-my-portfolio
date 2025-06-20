@@ -1,0 +1,31 @@
+$soft-background-color: #ffffff !default; // Testing
+$font-color: #7b809a !default;
+$h-color: #344767 !default;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f0f2f5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #e91e63 !default;
+$secondary: #7b809a !default;
+$info: #1a73e8 !default;
+$success: #4caf50 !default;
+$warning: #fb8c00 !default;
+$danger: #f44335 !default;
+$light: $gray-200 !default;
+$dark: $h-color !default;
+
+$fc-event-title-padding-y:          .2rem !default;
+$fc-event-title-padding-x:          .3rem !default;
+
+$fc-daygrid-event-border-radius:     .35rem !default;
+
+$fc-theme-standard-dark-border-color: rgba($secondary, .3) !default;

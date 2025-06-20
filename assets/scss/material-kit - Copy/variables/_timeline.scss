@@ -1,0 +1,32 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #f0f2f5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// Timeline
+
+$timeline-axis-width:      2px !default;
+$timeline-axis-color:      #e5e5e5 !default;
+$timeline-axis-color-dark: #4a4a4a !default;
+$timeline-left:            1rem !default;
+
+$timeline-step-bg: $white !default;
+$timeline-step-width: 26px !default;
+$timeline-step-height: $timeline-step-width !default;
+$timeline-step-radius: 50% !default;
+$timeline-step-transform: translateX(-50%) !default;
+$timeline-step-line-height: 1.4 !default;
+
+$timeline-step-border-width: 2px !default;
+$timeline-step-border-color: $timeline-axis-color !default;
+
+$timeline-content-margin-left: 45px !default;
+$timeline-content-padding-top: .35rem !default;
+$timeline-content-top: -6px !default;

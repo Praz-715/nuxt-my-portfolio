@@ -10,6 +10,13 @@ import "vue-prism-editor/dist/prismeditor.min.css";
 
 // import highlighting library (you can use any library you want just return html string)
 import prism from "prismjs";
+// import prism from "@/assets/js/prism.js"; // import prism.js from assets folder
+
+
+import "prismjs/components/prism-sql"; // import html language
+import "prismjs/components/prism-bash"; // import html language
+import "prismjs/components/prism-python"; // import html language
+
 
 
 
@@ -34,6 +41,10 @@ const props = defineProps({
     type: String,
     default: "",
   },
+  lang: {
+    type: String,
+    default: 'bash', // default language
+  }
 });
 
 // variables
@@ -83,33 +94,29 @@ const copy = async (event) => {
 };
 
 const highlighter = (code) => {
-  return prism.highlight(code, prism.languages.html);
+  const language = props.lang;
+
+  if (!prism.languages[language]) {
+    console.warn(`Prism: Language "${language}" not loaded.`);
+    return code;
+  }
+
+  return prism.highlight(code, prism.languages[language], language);
 };
 
 
-onMounted(() => {
-  // load languages
-  // loadLanguages(['sql']);
-});
+
 </script>
 
 <template>
-<div class="position-relative p-4 pb-2">
-          <a
-            class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3 z-index-3"
-            @click="copy($event)"
-            href="javascript:;"
-            ><i class="fas fa-copy text-sm me-1"></i> Copy</a
-          >
-          <figure class="highlight">
-            <PrismEditor
-              class="p-2 bg-gray-100 border-radius-xl height-800 my-editor"
-              v-model="editorCode"
-              :highlight="highlighter"
-              readonly
-            ></PrismEditor>
-          </figure>
-        </div>
+  <div class="position-relative p-4 pb-2">
+    <a class="btn btn-sm bg-gradient-dark position-absolute end-4 mt-3 z-index-3" @click="copy($event)"
+      href="javascript:;"><i class="fas fa-copy text-sm me-1"></i> Copy</a>
+    <figure class="highlight">
+      <PrismEditor class="p-2 bg-gray-100 border-radius-xl height-800 my-editor" v-model="editorCode"
+        :highlight="highlighter" readonly></PrismEditor>
+    </figure>
+  </div>
 
 
 
@@ -174,8 +181,15 @@ onMounted(() => {
   padding: 5px;
   tab-size: 4;
 }
+
 /* optional class for removing the outline */
 .prism-editor__textarea:focus {
   outline: none;
+}
+
+/* hanya berlaku di dalam PrismEditor */
+.my-editor ::selection {
+  background: #ffddb3;
+  color: #4a2c00;
 }
 </style>

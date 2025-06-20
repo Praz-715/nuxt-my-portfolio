@@ -1,10 +1,11 @@
 <script setup>
+import { defineProps } from 'vue'
+import { NuxtLink } from '#components'
+
 defineProps({
   routes: {
     type: Array,
     required: true,
-    route: String,
-    label: String,
     default: () => [
       {
         route: "/",
@@ -14,6 +15,7 @@ defineProps({
   },
 });
 </script>
+
 <template>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -22,7 +24,9 @@ defineProps({
         :key="index"
         class="breadcrumb-item"
       >
-        <a v-if="index != routes.length - 1" :href="route">{{ label }}</a>
+        <NuxtLink v-if="index !== routes.length - 1" :to="route">
+          {{ label }}
+        </NuxtLink>
         <template v-else>{{ label }}</template>
       </li>
     </ol>

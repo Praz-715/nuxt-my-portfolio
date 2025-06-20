@@ -1,0 +1,54 @@
+/*!
+ * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@use "functions";
+@use "variables";
+@use "maps";
+@use "mixins";
+@use "utilities";
+
+// Layout & components
+@use "root";
+@use "reboot";
+@use "type";
+@use "images";
+@use "containers";
+@use "grid";
+@use "tables";
+@use "forms";
+@use "buttons";
+@use "transitions";
+@use "dropdown";
+@use "button-group";
+@use "nav";
+@use "navbar";
+@use "card";
+@use "accordion";
+@use "breadcrumb";
+@use "pagination";
+@use "badge";
+@use "alert";
+@use "progress";
+@use "list-group";
+@use "close";
+@use "toasts";
+@use "modal";
+@use "tooltip";
+@use "popover";
+@use "carousel";
+@use "spinners";
+@use "offcanvas";
+@use "placeholders";
+
+// Helpers
+@use "helpers";
+
+// Utilities
+@use "utilities/api";
+// scss-docs-end import-stack

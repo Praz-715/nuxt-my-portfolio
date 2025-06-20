@@ -1,0 +1,63 @@
+/*!
+
+=========================================================
+* Material Kit - v3.0.4
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (site.license)
+
+* Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+// {{ site.product.name }} components
+
+// Variables
+@use "variables/navbar-vertical";
+@use "variables/social-buttons";
+@use "variables/breadcrumb";
+
+// Mixin
+@use "mixins/mixins";
+
+// Core Components - extra styling
+@use "alert";
+@use "avatars";
+@use "badge";
+@use "buttons";
+@use "breadcrumbs";
+@use "cards";
+@use "dark-version";
+@use "dropdown";
+@use "dropup";
+@use "header";
+@use "fixed-plugin";
+@use "forms/forms";
+@use "footer";
+@use "gradients";
+@use "icons";
+@use "info-areas";
+@use "misc";
+@use "navbar";
+@use "navbar-vertical";
+@use "nav";
+@use "pagination";
+@use "popovers";
+@use "progress";
+@use "rtl";
+@use "ripple";
+@use "social-buttons";
+@use "tables";
+@use "timeline";
+@use "tilt";
+@use "tooltips";
+@use "typography";
+
+// Plugins
+@use "plugins/free/plugins";

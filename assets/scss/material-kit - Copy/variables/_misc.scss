@@ -1,0 +1,111 @@
+// Horizontal Faded Line
+
+$gray-100: #f8f9fa !default;
+$gray-200: #f0f2f5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$h-color: #344767 !default;
+$info-gradient: #49a3f1 !default;
+$primary: #e91e63 !default;
+$secondary: #7b809a !default;
+$info: #1a73e8 !default;
+$success: #4caf50 !default;
+$warning: #fb8c00 !default;
+$danger: #f44335 !default;
+$light: $gray-200 !default;
+$dark: $h-color !default;
+
+
+// Gradient colors
+$primary-gradient: #ec407a !default;
+$primary-gradient-state: #d81b60 !default;
+
+$secondary-gradient: #747b8a !default;
+$secondary-gradient-state: #495361 !default;
+
+$info-gradient: #49a3f1 !default;
+$info-gradient-state: #1a73e8 !default;
+
+$success-gradient: #66bb6a !default;
+$success-gradient-state: #43a047 !default;
+
+$danger-gradient: #ef5350 !default;
+$danger-gradient-state: #e53935 !default;
+
+$warning-gradient: #ffa726 !default;
+$warning-gradient-state: #fb8c00 !default;
+
+$dark-gradient: #42424a !default;
+$dark-gradient-state: #191919 !default;
+
+$light-gradient: #ebeff4 !default;
+$light-gradient-state: #ced4da !default;
+
+$dark-gradient-dark: #323a54 !default;
+$dark-gradient-state-dark: #1a2035 !default;
+
+
+
+$hr-bg:                               transparent !default;
+$hr-transform:                        rotate(90deg) !default;
+$hr-bg-image:                         linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) !default;
+$hr-bg-dark-image:                    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .4), rgba(0, 0, 0, 0)) !default;
+
+
+// Gradient Animation
+$gradient-animation-background:       linear-gradient(-45deg, $info-gradient, $danger, $warning, $primary-gradient, $dark) !default;
+$gradient-animation-bg-size:          400% 400% !default;
+
+// Device Wrapper
+$device-wrapper-radius:               3.5rem !default;
+$device-wrapper-box-shadow:           0 12px 15px rgba(140, 152, 164, 0.1) !default;
+$device-wrapper-animation:            gradient 10s ease infinite !default;
+
+
+// Nav pills
+$nav-pills-link-border-radius:        0.5rem !default;
+$nav-pills-link-box-shadow:           0px 1px 5px 1px #ddd !default;
+$nav-pills-link-active-padding:       7px 15px !default;
+$nav-pills-link-active-margin:        1px !default;
+$nav-pills-link-active-animation:     .2s ease !default;
+
+// Table Progress
+
+$table-progress-width:                120px !default;
+$table-progress-height:               3px !default;
+$table-progress-margin:               0 !default;
+
+// Tooltip Arrow
+
+$tooltip-arrow-left:                  1px !default;
+$tooltip-arrow-right:                 $tooltip-arrow-left !default;
+
+// Footer Link hover animation
+
+$footer-link-animation:               opacity .3 ease !default;
+
+// Blur background
+
+$blur-light-background:               rgba(255, 255, 255, 0.4) !default;
+$blur-dark-background:                rgba(0, 0, 0, 0.3) !default;
+
+// HR w/ opacity
+
+$hr-bg-color:                         transparent !default;
+$hr-width:                            1px !default;
+$hr-margin:                           .75rem 0 !default;
+$hr-horizontal-bg-image-gray-light:   linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)) !default;
+$hr-bg-color-light:                   linear-gradient(90deg,hsla(0,0%,100%,0),#fff,hsla(0,0%,100%,0)) !default;
+$hr-bg-color-dark:                    linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent) !default;
+
+// border right - pseudo
+
+$border-right-after-top:              3vh !default;
+$border-right-after-height:           70% !default;
+$border-right-after-width:            50% !default;
+$border-right-after-border-color:     #dee2e6 !default;
