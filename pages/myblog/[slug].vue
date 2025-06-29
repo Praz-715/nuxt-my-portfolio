@@ -99,13 +99,14 @@ print(size_all_database)`
         </BlogHeaderBlog>
         <div class="container">
             <div class="card card-body blur shadow-blur mt-n12 mb-4">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-12 mx-auto">
                         <div class="mb-3 w-100 w-md-50" :class="breadcrumbWidthClass">
                             <BreadCrumbs :routes="breadcrumb" />
                         </div>
                     </div>
-                </div>
+                </div> -->
+                
                 <!-- <h3>{{ title }}</h3> -->
                 <!-- <div class="mt-sm-1 mt-1"> -->
                 <div class="row">
@@ -118,7 +119,8 @@ print(size_all_database)`
                             <img class="rounded  w-100 w-md-75 w-lg-80" :src="blog.coverImage" alt=""
                                 style="object-fit: cover;" loading="lazy" />
                         </div>
-                        <BlogContentCustomQuote quote="Hidup adalah perjuangan, bukan pemberian." />
+                        <BlogRenderer :content="blog.content" />
+                        <!-- <BlogContentCustomQuote quote="Hidup adalah perjuangan, bukan pemberian." />
                         <BlogContentParagraphText>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nesciunt
                             quod repellat sed? Tenetur, magnam vel fugiat, natus veniam ipsum facere,
@@ -130,14 +132,14 @@ print(size_all_database)`
                             { id: 1, name: 'Andrew Mike', job: 'Develop', since: '2013', salary: '€ 99,225' },
                             { id: 2, name: 'John Doe', job: 'Design', since: '2012', salary: '€ 89,241' },
                             { id: 3, name: 'Alex Mike', job: 'Design', since: '2010', salary: '€ 92,144' }
-                        ]" />
+                        ]" /> -->
 
 
 
 
 
 
-                        <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nesciunt
+                        <!-- <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nesciunt
                             quod repellat sed?
                             Tenetur, magnam vel fugiat, natus veniam ipsum facere, laboriosam totam aut eum fugit!
                             Consectetur consequatur voluptates distinctio?
@@ -173,7 +175,7 @@ print(size_all_database)`
                             Consectetur consequatur voluptates distinctio?
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
 
-                        </p>
+                        </p> -->
                     </div>
                     <div class="col-lg-3">
                         <div class="position-sticky" style="top: 100px">
