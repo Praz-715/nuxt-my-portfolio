@@ -1,59 +1,69 @@
-import image0 from "../images/install-oracle-19c-linux7/image0.png";
-import image1 from "../images/install-oracle-19c-linux7/image1.png";
-import image2 from "../images/install-oracle-19c-linux7/image2.png";
-import image3 from "../images/install-oracle-19c-linux7/image3.png";
-import image4 from "../images/install-oracle-19c-linux7/image4.png";
-import image5 from "../images/install-oracle-19c-linux7/image5.png";
-import image6 from "../images/install-oracle-19c-linux7/image6.png";
-import image7 from "../images/install-oracle-19c-linux7/image7.png";
-import image8 from "../images/install-oracle-19c-linux7/image8.png";
-import image9 from "../images/install-oracle-19c-linux7/image9.png";
-import image10 from "../images/install-oracle-19c-linux7/image10.png";
-import image11 from "../images/install-oracle-19c-linux7/image11.png";
-import image12 from "../images/install-oracle-19c-linux7/image12.png";
-import image13 from "../images/install-oracle-19c-linux7/image13.png";
-import image14 from "../images/install-oracle-19c-linux7/image14.png";
-import image15 from "../images/install-oracle-19c-linux7/image15.png";
-import image16 from "../images/install-oracle-19c-linux7/image16.png";
-import image17 from "../images/install-oracle-19c-linux7/image17.png";
-import image18 from "../images/install-oracle-19c-linux7/image18.png";
-import image19 from "../images/install-oracle-19c-linux7/image19.png";
-import image20 from "../images/install-oracle-19c-linux7/image20.png";
-import image21 from "../images/install-oracle-19c-linux7/image21.png";
-import image22 from "../images/install-oracle-19c-linux7/image22.png";
-import image23 from "../images/install-oracle-19c-linux7/image23.png";
-import image24 from "../images/install-oracle-19c-linux7/image24.png";
-import image25 from "../images/install-oracle-19c-linux7/image25.png";
-import image26 from "../images/install-oracle-19c-linux7/image26.png";
-import image27 from "../images/install-oracle-19c-linux7/image27.png";
-import image28 from "../images/install-oracle-19c-linux7/image28.png";
-import image29 from "../images/install-oracle-19c-linux7/image29.png";
-import image30 from "../images/install-oracle-19c-linux7/image30.png";
-import image31 from "../images/install-oracle-19c-linux7/image31.png";
-import image32 from "../images/install-oracle-19c-linux7/image32.png";
-import coverImage from "../images/install-oracle-19c-linux7/coverImage.png";
+import image0 from "../images/install-oracle-19c-linux9/image0.png";
+import image1 from "../images/install-oracle-19c-linux9/image1.png";
+import image2 from "../images/install-oracle-19c-linux9/image2.png";
+import image3 from "../images/install-oracle-19c-linux9/image3.png";
+import image4 from "../images/install-oracle-19c-linux9/image4.png";
+import image5 from "../images/install-oracle-19c-linux9/image5.png";
+import image6 from "../images/install-oracle-19c-linux9/image6.png";
+import image7 from "../images/install-oracle-19c-linux9/image7.png";
+import image8 from "../images/install-oracle-19c-linux9/image8.png";
+import image9 from "../images/install-oracle-19c-linux9/image9.png";
+import image10 from "../images/install-oracle-19c-linux9/image10.png";
+import image11 from "../images/install-oracle-19c-linux9/image11.png";
+import image12 from "../images/install-oracle-19c-linux9/image12.png";
+import image13 from "../images/install-oracle-19c-linux9/image13.png";
+import image14 from "../images/install-oracle-19c-linux9/image14.png";
+import image15 from "../images/install-oracle-19c-linux9/image15.png";
+import image16 from "../images/install-oracle-19c-linux9/image16.png";
+import image17 from "../images/install-oracle-19c-linux9/image17.png";
+import image18 from "../images/install-oracle-19c-linux9/image18.png";
+import image19 from "../images/install-oracle-19c-linux9/image19.png";
+import image20 from "../images/install-oracle-19c-linux9/image20.png";
+import image21 from "../images/install-oracle-19c-linux9/image21.png";
+import image22 from "../images/install-oracle-19c-linux9/image22.png";
+import image23 from "../images/install-oracle-19c-linux9/image23.png";
+import image24 from "../images/install-oracle-19c-linux9/image24.png";
+import image25 from "../images/install-oracle-19c-linux9/image25.png";
+import image26 from "../images/install-oracle-19c-linux9/image26.png";
+import image27 from "../images/install-oracle-19c-linux9/image27.png";
+import image28 from "../images/install-oracle-19c-linux9/image28.png";
+import image29 from "../images/install-oracle-19c-linux9/image29.png";
+import image30 from "../images/install-oracle-19c-linux9/image30.png";
+import image31 from "../images/install-oracle-19c-linux9/image31.png";
+// import image32 from "../images/install-oracle-19c-linux9/image32.png";
+import coverImage from "../images/install-oracle-19c-linux9/coverImage.png";
 
 
 export default {
-    title: "Install Oracle Database 19c pada Linux 7 (RHEL7, Centos7, OL7)",
-    description: "Langkah mudah memahami cara menginstall Oracle Database 19 pada Linux 7 (RHEL7, Centos7, OL7) beserta konfigurasi dasar yang diperlukan.",
+    title: "Install Oracle Database 19c pada Linux 9 (RHEL9, Centos9, OL9)",
+    description: "Langkah mudah memahami cara menginstall Oracle Database 19 pada Linux 9 (RHEL9, Centos9, OL9) beserta konfigurasi dasar yang diperlukan.",
     author: "Teguh Prasetyo",
-    slug: "install-oracle-19c-linux-7",
+    slug: "install-oracle-19c-linux-9",
     coverImage: coverImage,
-    publishedAt: "2025-06-29",
+    publishedAt: "2025-07-04",
     content: [
         {
             type: "paragraph",
-            text: "Panduan lengkap langkah-langkah instalasi Oracle Database 19c pada sistem operasi Linux versi 7, mencakup Red Hat Enterprise Linux 7, CentOS 7, dan Oracle Linux 7. Artikel ini juga menyertakan praktik terbaik dalam konfigurasi sistem dan database untuk memastikan instalasi berjalan optimal dan siap digunakan di lingkungan produksi."
+            text: "Panduan lengkap langkah-langkah instalasi Oracle Database 19c pada sistem operasi Linux versi 9, mencakup Red Hat Enterprise Linux 7, CentOS 7, dan Oracle Linux 7. Artikel ini juga menyertakan praktik terbaik dalam konfigurasi sistem dan database untuk memastikan instalasi berjalan optimal dan siap digunakan di lingkungan produksi."
         },
-        {
-            type: "quote",
-            quote: "Artikel ini tidak membahas proses instalasi sistem operasi. Jika Anda ingin mengetahui cara menginstal sistem operasi Linux, silakan lihat panduannya di sini."
-        },
+        // {
+        //     type: "quote",
+        //     quote: "Artikel ini tidak membahas proses instalasi sistem operasi. Jika Anda ingin mengetahui cara menginstal sistem operasi Linux, silakan lihat panduannya di sini."
+        // },
         {
             type: "quote",
             quote: "Download Oracle Database 19c di",
             link: "https://www.oracle.com/id/database/technologies/oracle19c-linux-downloads.html"
+        },
+        {
+            type: "quote",
+            quote: "Download OPatch 19",
+            link: "https://updates.oracle.com/download/6880880.html"
+        },
+        {
+            type: "quote",
+            quote: "Download Oracle Patch 19.23",
+            link: "https://support.oracle.com/knowledge/Oracle Cloud/2521164_1.html"
         },
         {
             type: "heading3",
@@ -76,10 +86,10 @@ export default {
             lang: "bash",
             code: `
 # Download preinstall jika ada internet
-curl -o  oracle-database-preinstall-19c-1.0-3.el7.x86_64.rpm https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackage/oracle-database-preinstall-19c-1.0-3.el7.x86_64.rpm
+curl -o oracle-database-preinstall-19c-1.0-1.el9.x86_64.rpm https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackage/oracle-database-preinstall-19c-1.0-1.el9.x86_64.rpm
 
 # Install 
-yum -y install oracle-database-preinstall-19c-1.0-3.el7.x86_64.rpm
+yum -y localinstall oracle-database-preinstall-19c-1.0-1.el9.x86_64.rpm
 `,
         },
         {
@@ -156,54 +166,50 @@ oracle   soft   memlock    134217728
 vi install_package.sh
 
 # Tambahkan konfigurasi berikut
-yum install -y bc
-yum install -y binutils
-yum install -y compat-libcap1
-yum install -y compat-libstdc++-33
-#yum install -y dtrace-modules
-#yum install -y dtrace-modules-headers
-#yum install -y dtrace-modules-provider-headers
-yum install -y dtrace-utils
-yum install -y elfutils-libelf
-yum install -y elfutils-libelf-devel
-yum install -y fontconfig-devel
-yum install -y glibc
-yum install -y glibc-devel
-yum install -y ksh
-yum install -y libaio
-yum install -y libaio-devel
-yum install -y libdtrace-ctf-devel
-yum install -y libXrender
-yum install -y libXrender-devel
-yum install -y libX11
-yum install -y libXau
-yum install -y libXi
-yum install -y libXtst
-yum install -y libgcc
-yum install -y librdmacm-devel
-yum install -y libstdc++
-yum install -y libstdc++-devel
-yum install -y libxcb
-yum install -y make
-yum install -y net-tools # Clusterware
-yum install -y nfs-utils # ACFS
-yum install -y python # ACFS
-yum install -y python-configshell # ACFS
-yum install -y python-rtslib # ACFS
-yum install -y python-six # ACFS
-yum install -y targetcli # ACFS
-yum install -y smartmontools
-yum install -y sysstat
+dnf install -y bc
+dnf install -y binutils
+dnf install -y compat-openssl11
+dnf install -y elfutils-libelf
+dnf install -y fontconfig
+dnf install -y glibc
+dnf install -y glibc-devel
+dnf install -y ksh
+dnf install -y libaio
+dnf install -y libasan
+dnf install -y liblsan
+dnf install -y libX11
+dnf install -y libXau
+dnf install -y libXi
+dnf install -y libXrender
+dnf install -y libXtst
+dnf install -y libxcrypt-compat
+dnf install -y libgcc
+dnf install -y libibverbs
+dnf install -y libnsl
+dnf install -y librdmacm
+dnf install -y libstdc++
+dnf install -y libxcb
+dnf install -y libvirt-libs
+dnf install -y make
+dnf install -y policycoreutils
+dnf install -y policycoreutils-python-utils
+dnf install -y smartmontools
+dnf install -y sysstat
+
+dnf install -y glibc-headers
+dnf install -y ipmiutil
+dnf install -y libnsl2
+dnf install -y libnsl2-devel
+dnf install -y net-tools
+dnf install -y nfs-utils 
 
 # Added by me.
 dnf install -y gcc
-yum install -y unixODBC
+dnf install -y unixODBC
 yum install -y unzip
 yum install -y xorg-x11-xauth
 yum install -y xterm
 yum install -y xorg-x11-utils
-
-
 `,
         },
         {
@@ -276,7 +282,7 @@ vi /etc/hosts
 
 
 <IP Address>    <hostname>.localdomain   <hostname>
-192.168.56.100   ol7-base.localdomain      ol7-base
+192.168.56.200  ol9-db.localdomain       ol9-db
 `,
         },
         {
@@ -301,6 +307,19 @@ chown -R oracle:oinstall /oracle
         },
         {
             type: "heading3",
+            text: "Pastikan semua file sudah diupload ke direktori /home/oracle"
+        },
+        {
+            type: "code",
+            lang: "bash",
+            code: `
+$ ls
+LINUX.X64_193000_db_home.zip  p36233263_190000_Linux-x86-64.zip  p6880880_190000_Linux-x86-64.zip
+
+`,
+        },
+        {
+            type: "heading3",
             text: "Buat Environment Oracle Database"
         },
         {
@@ -313,7 +332,7 @@ vi db.env
 export TMP=/tmp
 export TMPDIR=$TMP
 
-export ORACLE_HOSTNAME=ol7-19.localdomain
+export ORACLE_HOSTNAME=ol9-db
 export ORACLE_UNQNAME=cdb1
 export ORACLE_SID=cdb1
 
@@ -322,10 +341,13 @@ export ORACLE_HOME=/oracle/product/19c
 export ORA_INVENTORY=/oracle/product/oraInventory
 
 export PATH=/usr/sbin:/usr/local/bin:$PATH
-export PATH=$ORACLE_HOME/bin:$PATH
+export PATH=$ORACLE_HOME/bin:$ORACLE_HOME/OPatch:$PATH
 
 export LD_LIBRARY_PATH=$ORACLE_HOME/lib:/lib:/usr/lib
 export CLASSPATH=$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib
+
+# Fake Oracle Linux 8
+export CV_ASSUME_DISTID=OEL8.6
 
 alias sq="sqlplus / as sysdba"
 `,
@@ -355,6 +377,7 @@ vi .bash_profile
 mkdir -p /oracle/product/orabase
 mkdir -p /oracle/product/19c
 mkdir -p /oracle/product/oraInventory
+mkdir -p /oracle/patch19-23
 `,
         },
         {
@@ -370,7 +393,7 @@ env | grep ORA
 ORACLE_UNQNAME=cdb1
 ORACLE_SID=cdb1
 ORACLE_BASE=/oracle/product/orabase
-ORACLE_HOSTNAME=ol7-base
+ORACLE_HOSTNAME=ol9-db
 ORA_INVENTORY=/oracle/product/oraInventory
 ORACLE_HOME=/oracle/product/19c
 `,
@@ -399,6 +422,41 @@ unzip -qq LINUX.X64_193000_db_home.zip -d $ORACLE_HOME
         },
         {
             type: "heading3",
+            text: "Ekstak Patch"
+        },
+        {
+            type: "code",
+            lang: "bash",
+            code: `
+unzip -qq p36233263_190000_Linux-x86-64.zip -d /oracle/patch19-23/
+`,
+        },
+        {
+            type: "heading3",
+            text: "Backup OPatch dan Ekstrak OPatch"
+        },
+        {
+            type: "code",
+            lang: "bash",
+            code: `
+cp -r $ORACLE_HOME/OPatch $ORACLE_HOME/OPatch.bak
+
+unzip -qqo p6880880_190000_Linux-x86-64.zip -d $ORACLE_HOME
+`,
+        },
+        {
+            type: "heading3",
+            text: "Cek OPatch"
+        },
+        {
+            type: "code",
+            lang: "bash",
+            code: `
+opatch version
+`,
+        },
+        {
+            type: "heading3",
             text: "Install Seoftware Oracle database 19c"
         },
         {
@@ -406,7 +464,12 @@ unzip -qq LINUX.X64_193000_db_home.zip -d $ORACLE_HOME
             lang: "bash",
             code: `
 cd $ORACLE_HOME
-./runInstaller
+./runInstaller -applyRU /oracle/patch19-23/36233263
+
+Preparing the home to patch...
+Applying the patch /oracle/patch19-23/36233263...
+Successfully applied the patch.
+
 `,
         },
         {
@@ -449,16 +512,6 @@ cd $ORACLE_HOME
             src: image7,
             alt: "-"
         },
-        {
-            type: "image",
-            src: image8,
-            alt: "-"
-        },
-        {
-            type: "image",
-            src: image9,
-            alt: "-"
-        },
         
         {
             type: "code",
@@ -474,14 +527,14 @@ cd $ORACLE_HOME
             lang: "bash",
             code: `
 # Output
-[root@ol7-base ~]# /oracle/product/oraInventory/orainstRoot.sh
+[root@ol9-db ~]# /oracle/product/oraInventory/orainstRoot.sh
 Changing permissions of /oracle/product/oraInventory.
 Adding read,write permissions for group.
 Removing read,write,execute permissions for world.
 
 Changing groupname of /oracle/product/oraInventory to oinstall.
 The execution of the script is complete.
-[root@ol7-base ~]# /oracle/product/19c/root.sh
+[root@ol9-db ~]# /oracle/product/19c/root.sh
 Performing root user operation.
 
 The following environment variables are set as:
@@ -499,32 +552,39 @@ Entries will be added to the /etc/oratab file as needed by
 Database Configuration Assistant when a database is created
 Finished running generic part of root script.
 Now product-specific root actions will be performed.
-Oracle Trace File Analyzer (TFA - Standalone Mode) is available at :
-    /oracle/product/19c/bin/tfactl
-
-Note :
-1. tfactl will use TFA Service if that service is running and user has been granted access
-2. tfactl will configure TFA Standalone Mode only if user has no access to TFA Service or TFA is not installed
 
 
 `,
         },
         {
             type: "image",
-            src: image10,
+            src: image8,
             alt: "-"
         },
         {
             type: "heading3",
             text: "Create new Listener"
         },
+        
         {
             type: "code",
             lang: "bash",
             code: `
-netca
-`,
+            netca
+            `,
         },
+        {
+            type: "image",
+            src: image9,
+            alt: "-"
+        },
+        {
+            type: "image",
+            src: image10,
+            alt: "-"
+        },
+        
+        
         {
             type: "image",
             src: image11,
@@ -556,11 +616,6 @@ netca
             alt: "-"
         },
         {
-            type: "image",
-            src: image17,
-            alt: "-"
-        },
-        {
             type: "heading3",
             text: "Buat Database Baru"
         },
@@ -568,8 +623,13 @@ netca
             type: "code",
             lang: "bash",
             code: `
-dbca
+            dbca
             `
+        },
+        {
+            type: "image",
+            src: image17,
+            alt: "-"
         },
         {
             type: "image",
@@ -643,7 +703,7 @@ dbca
         },
         {
             type: "image",
-            src: image32,
+            src: image31,
             alt: "-"
         },
         {
@@ -654,17 +714,17 @@ dbca
             type: "code",
             lang: "bash",
             code: `
-[oracle@ol7-base 19c]$ sq
+[oracle@ol9-db ~]$ sq
 
-SQL*Plus: Release 19.0.0.0.0 - Production on Mon Jun 23 15:53:14 2025
-Version 19.3.0.0.0
+SQL*Plus: Release 19.0.0.0.0 - Production on Sun Jun 29 13:15:38 2025
+Version 19.23.0.0.0
 
-Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+Copyright (c) 1982, 2023, Oracle.  All rights reserved.
 
 
 Connected to:
 Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
-Version 19.3.0.0.0
+Version 19.23.0.0.0
 
 SQL> select name, open_mode, database_role from v$database;
 
@@ -672,38 +732,32 @@ NAME      OPEN_MODE            DATABASE_ROLE
 --------- -------------------- ----------------
 CDB1      READ WRITE           PRIMARY
 
-SQL> show pdbs
-
-    CON_ID CON_NAME                       OPEN MODE  RESTRICTED
----------- ------------------------------ ---------- ----------
-         2 PDB$SEED                       READ ONLY  NO
-         3 PDB1                           READ WRITE NO
 SQL> exit
 Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
-Version 19.3.0.0.0
-[oracle@ol7-base 19c]$ lsnrctl status
+Version 19.23.0.0.0
+[oracle@ol9-db ~]$ lsnrctl status
 
-LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 23-JUN-2025 15:53:35
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 29-JUN-2025 13:15:55
 
-Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+Copyright (c) 1991, 2024, Oracle.  All rights reserved.
 
-Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=ol7-base)(PORT=1521)))
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=ol9-db)(PORT=1521)))
 STATUS of the LISTENER
 ------------------------
 Alias                     LISTENER
 Version                   TNSLSNR for Linux: Version 19.0.0.0.0 - Production
-Start Date                23-JUN-2025 14:52:12
-Uptime                    0 days 1 hr. 1 min. 24 sec
+Start Date                29-JUN-2025 12:34:39
+Uptime                    0 days 0 hr. 41 min. 16 sec
 Trace Level               off
 Security                  ON: Local OS Authentication
 SNMP                      OFF
 Listener Parameter File   /oracle/product/19c/network/admin/listener.ora
-Listener Log File         /oracle/product/orabase/diag/tnslsnr/ol7-base/listener/alert/log.xml
+Listener Log File         /oracle/product/orabase/diag/tnslsnr/ol9-db/listener/alert/log.xml
 Listening Endpoints Summary...
-  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=ol7-base)(PORT=1521)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=ol9-db.localdomain)(PORT=1521)))
   (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1521)))
 Services Summary...
-Service "383a5269f55e55eae06511c723e961ff" has 1 instance(s).
+Service "38b0d28b7da5aa95e063c838a8c0966c" has 1 instance(s).
   Instance "cdb1", status READY, has 1 handler(s) for this service...
 Service "86b637b62fdf7a65e053f706e80a27ca" has 1 instance(s).
   Instance "cdb1", status READY, has 1 handler(s) for this service...

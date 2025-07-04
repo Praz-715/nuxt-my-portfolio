@@ -8,6 +8,11 @@ import post1 from "@/assets/img/examples/testimonial-6-2.jpg";
 import post2 from "@/assets/img/examples/testimonial-6-3.jpg";
 import post3 from "@/assets/img/examples/blog-9-4.jpg";
 import post4 from "@/assets/img/examples/blog2.jpg";
+
+import allBlogs from '~/data/blog/allBlogs.js'
+
+const blogs = ref(allBlogs.slice(0, 4))
+
 </script>
 <template>
   <!-- <section class="my-5 py-5" id="blog"> -->
@@ -19,32 +24,15 @@ import post4 from "@/assets/img/examples/blog2.jpg";
       </div> -->
       <!-- <div class="row"> -->
         <!-- <div class="col-lg-3 col-sm-6"> -->
-          <BlogSampingRecentPost
-            :image="post1"
-            title="Rover raised $65 million"
-            description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
-          />
-        <!-- </div> -->
-        <!-- <div class="col-lg-3 col-sm-6"> -->
-          <BlogSampingRecentPost
-            :image="post2"
-            title="MateLabs machine learning"
-            description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
-          />
-        <!-- </div> -->
-        <!-- <div class="col-lg-3 col-sm-6"> -->
-          <BlogSampingRecentPost
-            :image="post3"
-            title="MateLabs machine learning"
-            description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
-          />
-        <!-- </div> -->
-        <!-- <div class="col-lg-3 col-md-12 col-12"> -->
-          <BlogSampingRecentPost
-            :image="post1"
-            title="Flexible work hours"
-            description="Rather than worrying about switching offices every couple years, you stay in the same place."
-          />
+          <div v-for="blog in blogs" class="mb-3">
+            <BlogSampingRecentPost
+              :image="blog.coverImage"
+              :title="blog.title"
+              :description="blog.description"
+            />
+
+          </div>
+          
         <!-- </div> -->
       <!-- </div> -->
     <!-- </div> -->

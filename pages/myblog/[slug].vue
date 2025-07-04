@@ -98,7 +98,7 @@ print(size_all_database)`
             </div>
         </BlogHeaderBlog>
         <div class="container">
-            <div class="card card-body blur shadow-blur mt-n12 mb-4">
+            <div class="card card-body blur shadow-blur mb-4" style="margin-top: -19rem;">
                 <!-- <div class="row">
                     <div class="col-lg-12 mx-auto">
                         <div class="mb-3 w-100 w-md-50" :class="breadcrumbWidthClass">

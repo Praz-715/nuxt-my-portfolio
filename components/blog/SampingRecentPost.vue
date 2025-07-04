@@ -1,4 +1,6 @@
 <script setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue';
+
 defineProps({
   image: {
     type: String,
@@ -24,6 +26,8 @@ defineProps({
     }),
   },
 });
+
+
 </script>
 <template>
   <div class="row g-6">
@@ -38,14 +42,14 @@ defineProps({
     </div>
     <div class="col-9">
       <h5>
-        <a :href="action.route" class="text-dark font-weight-bold" :title="title"   style="font-size: medium; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;">
-          <!-- {{ title.length > 16 ? title.slice(0, 20) + '...' : title }} -->
-            {{ title }}
-          </a>
+        <a :href="action.route" class="text-dark font-weight-bold mt-1" :title="title"   style="font-size: medium;  display: block;">
+          <!-- {{ title.length > 50 ? title.slice(0, 50) + '...' : title }} -->
+          {{ title }}
+        </a>
       </h5>
-      <a :href="action.route" class="text-sm icon-move-right" :class="`text-${action.color}`">{{ action.label }}
+      <!-- <a :href="action.route" class="text-sm icon-move-right" :class="`text-${action.color}`">{{ action.label }}
         <i class="fas fa-arrow-right text-xs ms-1"></i>
-      </a>
+      </a> -->
     </div>
   </div>
 </template>

@@ -49,8 +49,8 @@ const blogs = ref(allBlogs)
                 <span class="mask bg-gradient-dark opacity-8"></span>
             </div>
         </BlogHeaderBlog>
-        <div class="container">
-            <div class="card card-body blur shadow-blur mt-n12 mb-4">
+        <div class="container" >
+            <div class="card card-body blur shadow-blur mb-4" style="margin-top: -19rem;">
                 <!-- <div class="row">
                     <div class="col-9">
 
@@ -63,9 +63,9 @@ const blogs = ref(allBlogs)
                 <!-- <div class="mt-sm-1 mt-1"> -->
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="mb-3 w-100 w-md-50" :class="breadcrumbWidthClass">
+                        <!-- <div class="mb-3 w-100 w-md-50" :class="breadcrumbWidthClass">
                             <BreadCrumbs :routes="breadcrumb" />
-                        </div>
+                        </div> -->
 
                         <BlogHeadingWelcome />
 
