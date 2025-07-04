@@ -100,10 +100,7 @@ const blogs = ref(allBlogs)
                     </div>
                     <div class="col-lg-3">
                         <div class="position-sticky" style="top: 100px">
-                            <div class="search-container">
-                                <input type="text" class="search-input" placeholder="Search here..." />
-                                <button class="search-button">Search</button>
-                            </div>
+                            
                             <BlogSampingPost />
                         </div>
                     </div>

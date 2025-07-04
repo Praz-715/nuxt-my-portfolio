@@ -16,25 +16,26 @@ const blogs = ref(allBlogs.slice(0, 4))
 </script>
 <template>
   <!-- <section class="my-5 py-5" id="blog"> -->
-    <!-- <div class="container"> -->
-      <!-- <div class="row">
+  <!-- <div class="container"> -->
+  <!-- <div class="row">
         <div class="col"> -->
-          <h3 class="mb-1">My latest blogposts</h3>
-        <!-- </div>
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Search here..." />
+    <button class="search-button">Search</button>
+  </div>
+  <h3 class="mb-1">My latest blogposts</h3>
+  <!-- </div>
       </div> -->
-      <!-- <div class="row"> -->
-        <!-- <div class="col-lg-3 col-sm-6"> -->
-          <div v-for="blog in blogs" class="mb-3">
-            <BlogSampingRecentPost
-              :image="blog.coverImage"
-              :title="blog.title"
-              :description="blog.description"
-            />
+  <!-- <div class="row"> -->
+  <!-- <div class="col-lg-3 col-sm-6"> -->
+  <div v-for="blog in blogs" class="mb-3">
+    <BlogSampingRecentPost :image="blog.coverImage" :title="blog.title" :description="blog.description"
+      :link="blog.slug" />
 
-          </div>
-          
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
+  </div>
+
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
   <!-- </section> -->
 </template>

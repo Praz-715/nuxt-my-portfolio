@@ -20,6 +20,7 @@
     "@nuxt/test-utils": "^3.18.0",
     "@nuxt/ui": "^3.1.1",
     "@unhead/vue": "^2.0.8",
+    "@vueuse/core": "^13.5.0",
     "bootstrap": "^5.3.6",
     "eslint": "^9.26.0",
     "nuxt": "^3.17.1",
