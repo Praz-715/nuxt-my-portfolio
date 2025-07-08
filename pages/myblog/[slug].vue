@@ -46,12 +46,12 @@ const search = ref(route.query.s || '')
 
 // Search Handler
 const searchBlogs = () => {
-  router.push({ path: '/myblog', query: { s: search.value } })
+    router.push({ path: '/myblog', query: { s: search.value } })
 }
 
 // Watch query change
 watch(() => route.query.s, (newVal) => {
-  search.value = newVal || ''
+    search.value = newVal || ''
 })
 
 
@@ -66,39 +66,47 @@ function convertTanggalIndo(inputDate) {
 }
 
 if (blog) {
-  useHead({
-    title: `${blog.title} | Teguh Prasetyo`,
-    meta: [
-      {
-        name: 'description',
-        content: blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)
-      },
-      {
-        name: 'keywords',
-        content: [blog.title, blog.author, 'oracle', 'linux', 'database'].join(', ')
-      },
-      {
-        property: 'og:title',
-        content: blog.title
-      },
-      {
-        property: 'og:description',
-        content: blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)
-      },
-      {
-        property: 'og:type',
-        content: 'article'
-      },
-      {
-        property: 'og:image',
-        content: blog.coverImage
-      },
-      {
-        property: 'og:url',
-        content: `https://teguh-prasetyo.com/myblog/${blog.slug}` // sesuaikan
-      }
-    ]
-  })
+    useSeoMeta({
+        title: '${blog.title} | Teguh Prasetyo',
+        ogTitle: '${blog.title} | Teguh Prasetyo',
+        description: 'blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)',
+        ogDescription: 'blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)',
+        ogImage: blog.coverImage,
+        // twitterCard: 'summary_large_image',
+    })
+    //   useHead({
+    //     title: `${blog.title} | Teguh Prasetyo`,
+    //     meta: [
+    //       {
+    //         name: 'description',
+    //         content: blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)
+    //       },
+    //       {
+    //         name: 'keywords',
+    //         content: [blog.title, blog.author, 'oracle', 'linux', 'database'].join(', ')
+    //       },
+    //       {
+    //         property: 'og:title',
+    //         content: blog.title
+    //       },
+    //       {
+    //         property: 'og:description',
+    //         content: blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)
+    //       },
+    //       {
+    //         property: 'og:type',
+    //         content: 'article'
+    //       },
+    //       {
+    //         property: 'og:image',
+    //         content: blog.coverImage
+    //       },
+    //       {
+    //         property: 'og:url',
+    //         content: `https://teguh-prasetyo.com/myblog/${blog.slug}` // sesuaikan
+    //       }
+    //     ]
+    //   })
 }
 </script>
 
@@ -125,7 +133,7 @@ if (blog) {
                         </div>
                     </div>
                 </div> -->
-                
+
                 <!-- <h3>{{ title }}</h3> -->
                 <!-- <div class="mt-sm-1 mt-1"> -->
                 <div class="row">
@@ -198,7 +206,7 @@ if (blog) {
                     </div>
                     <div class="col-lg-3">
                         <div class="position-sticky" style="top: 100px">
-                            <BlogSampingPost v-model:search="search" @onSearch="searchBlogs"  />
+                            <BlogSampingPost v-model:search="search" @onSearch="searchBlogs" />
                         </div>
                     </div>
 
