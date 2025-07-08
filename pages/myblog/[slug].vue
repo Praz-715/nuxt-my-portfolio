@@ -1,10 +1,15 @@
 <script setup>
 
 import { useRoute, navigateTo } from 'nuxt/app'
-import { ref, onBeforeMount } from 'vue'
+import { ref, onBeforeMount, computed, watch } from 'vue'
 import allBlogs from '~/data/blog/allBlogs.js'
+import image from "@/assets/img/city-profile.jpg";
+
+
 
 const route = useRoute()
+const router = useRouter()
+
 const blogs = ref(allBlogs)
 const slug = route.params.slug
 
@@ -18,12 +23,6 @@ onBeforeMount(() => {
 
 // ambil data blog jika valid
 const blog = blogs.value.find(blog => blog.slug === slug)
-
-import image from "@/assets/img/city-profile.jpg";
-// import post1 from "@/assets/img/examples/testimonial-6-2.jpg";
-import { header1Code } from "~/data/codes.js";
-
-
 
 
 // let bangke = 
@@ -42,6 +41,19 @@ const breadcrumbWidthClass = computed(() => {
     return 'w-lg-75'
 })
 
+// 💡 Search State
+const search = ref(route.query.s || '')
+
+// Search Handler
+const searchBlogs = () => {
+  router.push({ path: '/myblog', query: { s: search.value } })
+}
+
+// Watch query change
+watch(() => route.query.s, (newVal) => {
+  search.value = newVal || ''
+})
+
 
 function convertTanggalIndo(inputDate) {
     const bulanIndo = [
@@ -53,34 +65,41 @@ function convertTanggalIndo(inputDate) {
     return `${tanggal} ${bulanIndo[parseInt(bulan, 10) - 1]} ${tahun}`;
 }
 
-
-
-const coba_kode_python = `#Size Database
-
-size_all_database = []
-
-for pdb in pdb_list:
-    conn = create_connection(
-        host='10.15.34.156',
-        port='1521',
-        service_name=pdb,
-        user='c##migrasi',
-        password='migrasi'
-    )
-
-    # 2. Jalankan query kalau koneksi berhasil
-    if conn:
-        df_datafile = run_query_satu(conn, """
-                                     SELECT SYS_CONTEXT('USERENV', 'CON_NAME'), 
-                                     (SELECT ROUND(SUM(BYTES)/1024/1024/1024, 2) from v$datafile) FROM DUAL""")
-        # print(list(df_datafile))
-        size_all_database.append(list(df_datafile))
-        # 3. Tutup koneksi
-        close_connection(conn)
-        
-print(size_all_database)`
-
-
+if (blog) {
+  useHead({
+    title: `${blog.title} | Teguh Prasetyo`,
+    meta: [
+      {
+        name: 'description',
+        content: blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)
+      },
+      {
+        name: 'keywords',
+        content: [blog.title, blog.author, 'oracle', 'linux', 'database'].join(', ')
+      },
+      {
+        property: 'og:title',
+        content: blog.title
+      },
+      {
+        property: 'og:description',
+        content: blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)
+      },
+      {
+        property: 'og:type',
+        content: 'article'
+      },
+      {
+        property: 'og:image',
+        content: blog.coverImage
+      },
+      {
+        property: 'og:url',
+        content: `https://teguh-prasetyo.com/myblog/${blog.slug}` // sesuaikan
+      }
+    ]
+  })
+}
 </script>
 
 <template>
@@ -179,7 +198,7 @@ print(size_all_database)`
                     </div>
                     <div class="col-lg-3">
                         <div class="position-sticky" style="top: 100px">
-                            <BlogSampingPost />
+                            <BlogSampingPost v-model:search="search" @onSearch="searchBlogs"  />
                         </div>
                     </div>
 
