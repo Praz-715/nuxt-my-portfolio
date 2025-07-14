@@ -31,7 +31,7 @@ import image29 from "../images/install-oracle-19c-linux8/image29.png";
 import image30 from "../images/install-oracle-19c-linux8/image30.png";
 import image31 from "../images/install-oracle-19c-linux8/image31.png";
 // import image32 from "../images/install-oracle-19c-linux8/image32.png";
-import coverImage from "../images/install-oracle-19c-linux8/coverImage.png";
+import coverImage from "../images/install-oracle-19c-linux8/coverImage.jpg";
 
 
 export default {
