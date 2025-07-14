@@ -67,16 +67,24 @@ function convertTanggalIndo(inputDate) {
 
 if (blog) {
     useSeoMeta({
-        title: `${blog.title} | Teguh Prasetyo`,
-        ogTitle: `${blog.title} | Teguh Prasetyo`,
-        description: `blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)`,
-        ogDescription: `blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)`,
+        title: `${(blog.title + ' | Teguh Prasetyo').slice(0, 65).trim()}`,
+        ogTitle: `${(blog.title + ' | Teguh Prasetyo').slice(0, 65).trim()}`,
+
+        description: (blog.description || blog.content.find(c => c.text)?.text || '')
+            .slice(0, 320)
+            .trim(),
+        ogDescription: (blog.description || blog.content.find(c => c.text)?.text || '')
+            .slice(0, 320)
+            .trim(),
+
         ogImage: `https://teguh-prasetyo.com/images/${blog.slug}.jpg`,
         ogUrl: `https://teguh-prasetyo.com/myblog/${blog.slug}`,
         ogImageType: 'image/jpeg',
+
         twitterImage: blog.coverImage,
-        // twitterCard: 'summary_large_image',
+        twitterCard: 'summary_large_image',
     })
+
     //   useHead({
     //     title: `${blog.title} | Teguh Prasetyo`,
     //     meta: [
