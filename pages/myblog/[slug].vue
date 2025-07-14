@@ -71,7 +71,7 @@ if (blog) {
         ogTitle: `${blog.title} | Teguh Prasetyo`,
         description: `blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)`,
         ogDescription: `blog.description || blog.content.find(c => c.text)?.text?.slice(0, 160)`,
-        ogImage: blog.coverImage,
+        ogImage: `https://teguh-prasetyo.com/images/${blog.slug}.jpg`,
         ogUrl: `https://teguh-prasetyo.com/myblog/${blog.slug}`,
         ogImageType: 'image/jpeg',
         twitterImage: blog.coverImage,

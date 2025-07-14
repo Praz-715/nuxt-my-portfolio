@@ -6,7 +6,7 @@ export default {
     title: "Konfigurasi Local Repository pada Linux 7 (RHEL7, Centos7, OL7)",
     description: "Langkah mudah konfigurasi Local Repository pada Linux 7",
     author: "Teguh Prasetyo",
-    slug: "install-oracle-19c-linux-7",
+    slug: "local-repo-linux-7",
     coverImage: coverImage,
     publishedAt: "2025-07-14",
     content: [
