@@ -33,6 +33,9 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-svgo',
   ],
+  routeRules: {
+    '/myblog/**': { prerender: true }
+  },
   vite: {
     plugins: [require('vite-svg-loader')()],
   },
